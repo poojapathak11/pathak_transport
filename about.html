@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./about.css">
+</head>
+<body>
+    <body bgcolor="#f2f2f2">
+
+<nav>
+  <a href="./index.html">Home</a>
+  <a href="./about.html">About</a>
+  <a href="./services.html">Services</a>
+  <a href="./contact.html">Contact</a>
+</nav>
+<section class="hero">
+    <div class="about">
+        <h1> About Us</h1>
+        
+        </div>
+        <div class="container">
+           
+                <div class="info">
+                <p> 
+"Step into our Golden Coffee Shop, where every sip is a journey through rich flavors and inviting aromas. Nestled in the heart of City/Town, our quaint café offers a warm ambiance, perfect for indulging in your favorite brew or discovering new caffeinated delights. From velvety lattes to robust espressos, each cup is crafted with care by our passionate baristas. Whether you're seeking a peaceful moment of solitude or catching up with friends, our welcoming atmosphere and artisanal treats make every visit a memorable experience. Join us at Golden Coffee shop and let the aroma of freshly ground beans awaken your senses.</p>
+</div>
+                    <button class="button"> Learn More </button>
+                </div>
+                <div class="hero-image">
+                    <img src="./jito_leylond.png">
+                    </div>
+            </div>
+            
+<hr />
+<p class="profile-head-name"><h1>Meet<span> Our </span> Team </p></h1> 
+
+<div class="card-container">
+             <-!--cards-->
+   
+
+      <center>
+    <div class="team-member-card">
+        <img src="./brojpg.jpg" class="card-img-1">
+        <p class="card-title">Name : Rahul Pathak</p>
+        <p>Mobile No:<a href="tel:+9423598535">9423598535</a></p>
+    
+    <div class="insta">
+        &nbsp; &nbsp; <a href="https://www.instagram.com/rahul_pathak.143?igsh=bmsxbnJoYTIyeWY1" target="_blank"
+        style="text-decoration: none; color: #000; font-size: 15px;"><i class="fa-brands fa-square-instagram social-icons-insta"
+          style="font-size: 22px;"></i>&nbsp;&nbsp;Instagram</a>
+      </div>
+      </div>
+</center>
+
+<script>
+    const navLinks = document.querySelectorAll('nav a');
+    const contentDivs = document.querySelectorAll('.content');
+  
+    navLinks.forEach((link, index) => {
+      link.addEventListener('click', function() {
+        navLinks.forEach((link) => {
+          link.classList.remove('active');
+        });
+        contentDivs.forEach((content) => {
+          content.style.display = 'none';
+        });
+        this.classList.add('active');
+        contentDivs[index].style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>

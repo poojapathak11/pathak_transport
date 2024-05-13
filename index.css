@@ -1,0 +1,48 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  nav {
+    background-color: #800040;
+    overflow: hidden;
+  }
+  nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: color 0.5s
+  }
+  nav a:hover {
+    background-color: #ff6600;
+  }
+  .active {
+    background-color: #ff66a3;
+  }
+  .content {
+    padding: 20px;
+  }
+  .footer {
+    background-color: #800040;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.footer a:hover {
+    color: #ff6600;
+}
+  

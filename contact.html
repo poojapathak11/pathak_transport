@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <body>
+        <body bgcolor="#f2f2f2">
+    
+    <nav>
+      <a href="./index.html" class="active">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./services.html">Services</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+
+    
+    <script>
+        const navLinks = document.querySelectorAll('nav a');
+        const contentDivs = document.querySelectorAll('.content');
+      
+        navLinks.forEach((link, index) => {
+          link.addEventListener('click', function() {
+            navLinks.forEach((link) => {
+              link.classList.remove('active');
+            });
+            contentDivs.forEach((content) => {
+              content.style.display = 'none';
+            });
+            this.classList.add('active');
+            contentDivs[index].style.display = 'block';
+          });
+        });
+      </script>
+</body>
+</html>
